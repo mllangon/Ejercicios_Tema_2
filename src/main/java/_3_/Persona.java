@@ -11,17 +11,17 @@ public class Persona {
         this.nombre = nombre;
     }
 
-    public void despertar(_2_.Reloj reloj) {
+    public void despertar(Reloj reloj, Lampara lampara) {
         System.out.println(nombre + " se despertó por la alarma del reloj.");
-        reloj.iniciarAlarma(new _2_.Lampara());
+        reloj.iniciarAlarma(lampara);
     }
 
-    public void encenderLampara(_2_.Lampara lampara) {
+    public void encenderLampara(Lampara lampara) {
         System.out.println(nombre + " enciende la lámpara.");
         lampara.encender();
     }
 
-    public void leerLibro(_2_.Libro libro) {
+    public void leerLibro(Libro libro) {
         System.out.println(nombre + " comienza a leer el libro: " + libro.getTitulo());
         libro.leer();
     }

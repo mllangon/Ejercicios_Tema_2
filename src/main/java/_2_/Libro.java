@@ -7,11 +7,15 @@ public class Libro {
         this.titulo = titulo;
     }
 
+    public String getTitulo() {
+        return titulo;
+    }
+
     public void leer() {
         System.out.println("Leyendo el libro: " + titulo);
     }
 
-    protected void finalize() throws Throwable {
+    protected void finalizar() throws Throwable {
         System.out.println("El libro '" + titulo + "' ahora está siendo reciclado.");
         super.finalize();
     }
