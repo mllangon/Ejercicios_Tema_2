@@ -3,18 +3,18 @@ package _5_;
 public class Simulacion {
     public static void main(String[] args) {
         Vehiculo bicicleta = new Bicicleta();
-        Motorizado coche = new Coche();
-        Motorizado camion = new Camion();
-        Motorizado deportivo = new Deportivo();
+        Vehiculo coche = new Coche();
+        Vehiculo camion = new Camion();
+        Vehiculo deportivo = new Deportivo();
 
         mostrarMovimiento(bicicleta);
         mostrarMovimiento(coche);
         mostrarMovimiento(camion);
         mostrarMovimiento(deportivo);
 
-        mostrarEstadoMotor(coche);
-        mostrarEstadoMotor(camion);
-        mostrarEstadoMotor(deportivo);
+        mostrarEstadoMotor((Motorizado) coche);
+        mostrarEstadoMotor((Motorizado) camion);
+        mostrarEstadoMotor((Motorizado) deportivo);
     }
 
     public static void mostrarMovimiento(Vehiculo vehiculo) {
