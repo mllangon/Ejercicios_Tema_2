@@ -11,7 +11,7 @@ public class Libro {
         System.out.println("Leyendo el libro: " + titulo);
     }
 
-    protected void finalizar() throws Throwable {
+    protected void finalize() throws Throwable {
         System.out.println("El libro '" + titulo + "' ahora está siendo reciclado.");
         super.finalize();
     }
